@@ -6,14 +6,14 @@
         "namespace": "default",
         "selfLink": "/apis/extensions/v1beta1/namespaces/default/deployments/my-nginx1",
         "uid": "aa272ba4-370c-11e8-ac8d-00155d380105",
-        "resourceVersion": "182136",
-        "generation": 8,
+        "resourceVersion": "184552",
+        "generation": 9,
         "creationTimestamp": "2018-04-03T07:00:16Z",
         "labels": {
             "app": "nginx"
         },
         "annotations": {
-            "deployment.kubernetes.io/revision": "7"
+            "deployment.kubernetes.io/revision": "8"
         }
     },
     "spec": {
@@ -34,7 +34,7 @@
                 "containers": [
                     {
                         "name": "nginx",
-                        "image": "nginx:1.7.9",
+                        "image": "nginx:1.7.7",
                         "ports": [
                             {
                                 "containerPort": 80,
@@ -63,7 +63,7 @@
         }
     },
     "status": {
-        "observedGeneration": 8,
+        "observedGeneration": 9,
         "replicas": 2,
         "updatedReplicas": 2,
         "readyReplicas": 2,
@@ -80,4 +80,3 @@
         ]
     }
 }
-
